@@ -3,8 +3,8 @@ body {
     line-height: 1.6; /* ระยะห่างระหว่างบรรทัดเพื่อให้อ่านสบาย */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* สีพื้นหลังของเว็บ */
-    color: #333; /* สีข้อความหลัก */
+    background-color: #FFB6C1; /* เปลี่ยนเป็นสีชมพูอ่อน (Light Pink) */
+    color: #4A2E2B; /* เปลี่ยนเป็นสีน้ำตาลเข้ม (Dark Brown) เพื่อให้อ่านง่าย */
 }
 
 header {
@@ -32,7 +32,7 @@ section {
 }
 
 h2 {
-    color: #4CAF50; /* สีของหัวข้อ */
+    color: #8B4513; /* เปลี่ยนสีหัวข้อ H2 เป็นสีน้ำตาล (Saddle Brown) */
 }
 
 .project {
@@ -41,7 +41,7 @@ h2 {
 
 .project h3 {
     margin: 0 0 10px;
-    color: #333;
+    color: #5C4033; /* เปลี่ยนสีหัวข้อโครงการเป็นสีน้ำตาลเข้ม */
 }
 
 ul {
@@ -52,7 +52,7 @@ ul {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333; /* สีพื้นหลังเข้ม */
+    background: #4A2E2B; /* เปลี่ยนพื้นหลังฟุตเตอร์เป็นสีน้ำตาลเข้มให้เข้ากับธีม */
     color: white;
     margin-top: 20px;
 }
