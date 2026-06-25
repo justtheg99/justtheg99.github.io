@@ -1,58 +1,106 @@
 body {
-    font-family: Arial, sans-serif; /* ตั้งค่าฟอนต์หลัก */
-    line-height: 1.6; /* ระยะห่างระหว่างบรรทัดเพื่อให้อ่านสบาย */
+    /* แนะนำให้เพิ่มฟอนต์น่ารักๆ เช่น 'Kanit' หรือ 'Chakra Petch' ใน HTML ด้วยนะครับ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #FFB6C1; /* เปลี่ยนเป็นสีชมพูอ่อน (Light Pink) */
-    color: #4A2E2B; /* เปลี่ยนเป็นสีน้ำตาลเข้ม (Dark Brown) เพื่อให้อ่านง่าย */
+    background-color: #FFF0F5; /* สีชมพูนมเย็นอ่อนๆ (Lavender Blush) ละมุนขึ้น */
+    color: #5D4037; /* สีน้ำตาลช็อกโกแลต */
 }
 
 header {
-    background: #4CAF50; /* สีพื้นหลังของส่วนหัว */
-    color: white; /* สีข้อความ */
-    padding: 20px 0; /* ระยะห่างด้านบนและล่าง */
-    text-align: center; /* จัดข้อความกึ่งกลาง */
+    background: #FFC0CB; /* เปลี่ยนจากสีเขียวเป็นสีชมพูพาสเทล */
+    color: #5D4037; /* เปลี่ยนข้อความหัวข้อเป็นสีน้ำตาลให้เข้ากัน */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px dashed #FFB6C1; /* เพิ่มเส้นใต้หยักๆ เส้นประน่ารัก */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 0px #FFF; /* เพิ่มมิติให้ข้อความดูนุ่มฟู */
 }
 
 header p {
-    margin: 5px 0 0; /* ตั้งระยะห่างของข้อความรอง */
+    margin: 8px 0 0;
+    font-weight: bold;
+    opacity: 0.8;
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px; /* จำกัดความกว้างของเนื้อหา */
-    background: white; /* พื้นหลังสีขาว */
-    border-radius: 8px; /* ทำให้ขอบมน */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบา ๆ */
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 20px; /* เพิ่มความโค้งมนให้ดูนุ่มนวลสไตล์เกาหลี */
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3); /* เงาสีชมพูฟุ้งๆ */
+    border: 3px solid #FFE4E1; /* เพิ่มขอบสีชมพูอ่อน */
 }
 
 h2 {
-    color: #8B4513; /* เปลี่ยนสีหัวข้อ H2 เป็นสีน้ำตาล (Saddle Brown) */
+    color: #D2691E; /* สีน้ำตาลอมส้มดูสดใส */
+    display: inline-block;
+    border-bottom: 3px dotted #D2691E; /* เส้นใต้หัวข้อแบบจุดไข่ปลา */
+    padding-bottom: 5px;
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.2s ease; /* ใส่แอนิเมชันตอนเมาส์ชี้ */
+}
+
+/* ลูกเล่นตอนเอาเมาส์ไปชี้ที่กล่องข้อความ */
+.project:hover {
+    transform: translateY(-3px); /* กล่องจะลอยขึ้นมานิดหน่อย */
+    background-color: #FFF5F5;
 }
 
 .project h3 {
     margin: 0 0 10px;
-    color: #5C4033; /* เปลี่ยนสีหัวข้อโครงการเป็นสีน้ำตาลเข้ม */
+    color: #8B4513;
 }
 
 ul {
-    list-style-type: square; /* ใช้จุดสี่เหลี่ยมแทนจุดกลม */
-    padding-left: 20px;
+    list-style-type: '🌸 '; /* เปลี่ยนจุดหน้าข้อความให้เป็นไอคอนดอกไม้สุดน่ารัก */
+    padding-left: 25px;
+}
+
+/* --- 💖 ส่วนของปุ่มกดที่เพิ่มเข้ามาใหม่ 💖 --- */
+.btn {
+    display: inline-block;
+    background-color: #FFB6C1; /* ปุ่มสีชมพู */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+    border-radius: 50px; /* ทำปุ่มทรงมนแคปซูล */
+    font-weight: bold;
+    border: 2px solid #FFA07A; /* ขอบปุ่มสีส้มพาสเทล */
+    box-shadow: 0 4px 0px #FFA07A; /* ทำปุ่มสามมิติสไตล์การ์ตูน */
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ชี้ปุ่ม */
+.btn:hover {
+    background-color: #FFC0CB;
+    transform: translateY(2px); /* ปุ่มยุบลงไปนิดหน่อย */
+    box-shadow: 0 2px 0px #FFA07A; /* เงาลดลงเหมือนโดนกด */
+}
+
+/* เอฟเฟกต์ตอนคลิกปุ่มจริงๆ */
+.btn:active {
+    transform: translateY(4px); /* ปุ่มยุบลงสุด */
+    box-shadow: 0 0px 0px #FFA07A;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #4A2E2B; /* เปลี่ยนพื้นหลังฟุตเตอร์เป็นสีน้ำตาลเข้มให้เข้ากับธีม */
-    color: white;
-    margin-top: 20px;
+    padding: 15px 0;
+    background: #5D4037; 
+    color: #FFE4E1;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
